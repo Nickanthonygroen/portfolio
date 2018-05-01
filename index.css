@@ -75,7 +75,7 @@ nav ul {
   padding: 0 2em;
 }
 nav ul li:last-of-type > a {
-  padding: .9em 1.7em;
+  padding: 1.1em 1.7em;
   border-style: solid;
   text-transform: uppercase;
   font-family: nun-black;
@@ -116,13 +116,16 @@ section {
   flex-direction: row;
   justify-content: space-between;
   margin: 0 1.5em;
+  font-family: nun-bold;
+  font-size: 1.5em;
+
 }
 
 .stuck > a:first-of-type {
   position: fixed;
   left:0;
   bottom: 0;
-  margin-left: 2em;
+  margin-left: 1.4em;
   margin-bottom: 1em;
 }
 
@@ -130,6 +133,6 @@ section {
   position: fixed;
   right:0;
   bottom: 0;
-  margin-right: 2em;
+  margin-right: 1.4em;
   margin-bottom: 1em;
 }
