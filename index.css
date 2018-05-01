@@ -1,4 +1,81 @@
+:root {
+  --mobile-margin: 0 2em;
+  --main-color: #212020;
+  /* tablet variables */
+
+  /*  desktop variables */
+}
+
+@font-face {
+
+}
+
+
 body {
   padding: 0;
   margin: 0;
+  color: var(--main-color);
+}
+
+h1,h2,h3,h4,h5 {
+  font-family: verdana;
+}
+
+p,span,label,a {
+  font-family: arial;
+}
+
+/* top nav */
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 1em;
+}
+
+/* all section height */
+section {
+  width: 100vw;
+  height: 100vh;
+}
+
+/* home */
+
+#home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#home > h2 {
+  font-size: .8em;
+  margin: var(--mobile-margin);
+}
+
+/* nick nav */
+
+.stuck {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 1.5em;
+}
+
+.stuck > a:first-of-type {
+  position: fixed;
+  left:0;
+  bottom: 0;
+  margin-left: 2em;
+  margin-bottom: 1em;
+}
+
+.stuck > a:last-of-type {
+  position: fixed;
+  right:0;
+  bottom: 0;
+  margin-right: 2em;
+  margin-bottom: 1em;
 }
