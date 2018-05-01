@@ -97,6 +97,10 @@ section {
   justify-content: center;
   align-items: center;
   text-align: center;
+  background-image: url(./images/background.svg);
+  background-repeat: no-repeat;
+  background-position: 2em 5em;
+  background-size: 75%;
 }
 
 #home > h2 {
