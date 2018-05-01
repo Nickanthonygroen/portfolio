@@ -1,13 +1,35 @@
 :root {
   --mobile-margin: 0 2em;
   --main-color: #212020;
+  --pink-color: #FF2D5E;
   /* tablet variables */
 
   /*  desktop variables */
 }
 
 @font-face {
+  font-family: merri-bold;
+  src: url(./fonts/Merriweather-Bold.ttf);
+}
 
+@font-face {
+  font-family: merri-black;
+  src: url(./fonts/Merriweather-Black.ttf);
+}
+
+@font-face {
+  font-family: nun-semibold;
+  src: url(./fonts/NunitoSans-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: nun-bold;
+  src: url(./fonts/NunitoSans-Bold.ttf);
+}
+
+@font-face {
+  font-family: nun-black;
+  src: url(./fonts/NunitoSans-Black.ttf);
 }
 
 
@@ -15,14 +37,27 @@ body {
   padding: 0;
   margin: 0;
   color: var(--main-color);
+  scroll-behavior: smooth;
 }
 
-h1,h2,h3,h4,h5 {
-  font-family: verdana;
+h1 {
+  font-family: merri-bold;
+  font-size: 34px;
+  letter-spacing: -1.5px;
+  text-transform: lowercase;
 }
 
-p,span,label,a {
-  font-family: arial;
+h2 {
+  font-family: nun-semibold;
+}
+a {
+  font-family: nun-bold;
+  color: var(--main-color);
+}
+#show-more a {
+  font-size: 24px;
+  text-decoration: none;
+  color: var(--pink-color);
 }
 
 /* top nav */
@@ -51,8 +86,13 @@ section {
 }
 
 #home > h2 {
-  font-size: .8em;
+  font-size: .9em;
+  letter-spacing: -0.7px;
   margin: var(--mobile-margin);
+}
+
+#show-more {
+  margin-bottom: 8em;
 }
 
 /* nick nav */
