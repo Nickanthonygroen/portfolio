@@ -104,7 +104,7 @@ section {
 }
 
 #home > h2 {
-  font-size: .9em;
+  font-size: 1em;
   letter-spacing: -0.7px;
   margin: var(--mobile-margin);
 }
@@ -140,3 +140,50 @@ section {
   margin-right: 1.4em;
   margin-bottom: 1em;
 }
+
+
+
+/* borderbox voor die fouten die je wilt verbergen */
+	* {
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+
+/*  dit is die sappige sectie van je*/
+	#design-cases {
+		display: flex;
+		justify-content: center;
+	}
+
+	/* je main grid breedte  */
+	#masonry {
+		width: 60%;
+	}
+
+	/* Dit is je main .item! blauwe item boxies */
+	.item {
+		width:  300px;
+		height: 300px;
+		background: #2296DD;
+		border: 2px solid #333;
+		margin: 1em;
+	}
+	/* Grijze boxen item boxies */
+	.item.thumbnail {
+		width:  300px;
+		height: 400px;
+		background: #cfcfcf
+	}
+	/* Groene item boxies */
+	.item.medium {
+		width:  300px;
+		height: 500px;
+		background: #A6E392
+	}
+	/* Paarse item boxies */
+	.item.large {
+		width:  300px;
+		height: 800px;
+		background: #D092E3
+	}
